@@ -1,0 +1,24 @@
+.grayBorder{
+    border:1px gray solid;
+}
+
+div.content{
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color: #000000;
+    font-size: 16px;
+    padding: 5px;
+}
+canvas#toggleSwitchCanvas{
+    border: 1px black solid;
+    width: 80px;
+    height: 30px;
+    background: dimgray;
+    clear: right;
+}
+div#toggle{
+    clear: both;
+}
+
+button{
+    visibility: hidden;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <script src="./js/unitController.js"></script>
+  <script src="./js/networking.js"></script>
+  <script src="./js/gameEngine.js"></script>
+  <script>
+    var address = "localhost";
+    var port = "8282";
+    var sideOfThisPlayer = "red";
+  </script>
+
+</head>
+<body style="background-color: lightcoral" onload="init();">
+<canvas id="canvas"  class="grayBorder" width="300" height="200">
+</canvas>
+<div style="display:none;">
+  <img id="terrain" src="./images/terrain.png" />
+</div>
+<div class="content autoGame">
+  <div id="toggle">
+    <div class ="rules">Select Auto or Manual mode:</div>
+    <table class="autoGame"><tr>
+      <td class="rules">
+        Manual
+      </td>
+      <td class="rules">
+        <canvas id="toggleSwitchCanvas"></canvas>
+      </td>
+      <td class="rules">
+        Auto
+      </td>
+    </tr></table>
+  </div>
+  <br>
+  <br>
+  <div class="rules autoGame">Manual Mode: Click on the units to control their movement.</div>
+  <br>
+  <div class="rules autoGame">Auto Mode: The simulation will continue until a unit from one side touches the other side's border. &nbsp You can still click on a unit to control its movement.</div>
+  <br>
+  <div id="winner" class = "autoGame"></div>
+</div>
+<div>
+  <button type="button" onclick="SendTestMessage()">Send Test Message!</button>
+</div>
+</body>
+</html>
